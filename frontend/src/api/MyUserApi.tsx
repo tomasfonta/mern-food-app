@@ -19,7 +19,7 @@ export const useCreateMyUser = () => {
         const response = await fetch(`${API_BASE_URL}/api/my/user`, {
             method: "POST",
             headers: {
-                Authorization: `Bearer${accessToken}`,
+                Authorization: `Bearer ${accessToken}`,
                 "Content-type": "application/json",
             },
             body: JSON.stringify(user),
